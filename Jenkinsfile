@@ -8,6 +8,7 @@ pipeline {
 	sh "docker image push test02.osdemo.com:5000/httpd-image"
         sh 'echo "successfully built docker image"'
       }
+    }
     stage('Docker build') {
       steps {
 	sh 'echo "docker build is initialising"'
